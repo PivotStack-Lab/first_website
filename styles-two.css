@@ -14,7 +14,6 @@
          url('svbasicmanual-nrpp-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 * {
@@ -48,11 +47,11 @@ body{
 .title-bar {
     background-color: var(--title-blue);
     font-family: 'sv_basic_manualbook';
-    height: 20px;
-    display: flex
+    height: 30px;
+    display: flex;
 }
 
-.title-bar h4 {
+.title-bar h2 {
     margin-top: 0;
     margin-left: 10px;
     color: var(--text-white);
@@ -61,7 +60,15 @@ body{
 .tool-bar {
     background-color: var(--border-grey);
     font-family: 'sv_basic_manualbook';
-    height: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.tool-bar select {
+    border: 5px solid var(--border-grey);
+    height: max-content;
+    font-size: large;
 }
 
 .window-body {
