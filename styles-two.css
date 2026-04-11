@@ -1,0 +1,50 @@
+:root {
+    --screen-black: #000000;
+    --title-blue: #0000a8;
+    --win-green: #098083;
+    --beige: #baa789;
+    --sky-blue: #bce5f7;
+    --text-grey: #bac5c4;
+}
+
+@font-face {
+    font-family: 'sv_basic_manualbook';
+    src: url('svbasicmanual-nrpp-webfont.woff2') format('woff2'),
+         url('svbasicmanual-nrpp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-color: var(--win-green);
+    box-sizing: border-box;
+    font-family: 'Microsoft Sans Serif';
+}
+
+p{
+    color: var(--text-grey);
+}
+.window-frame {
+    height: 400px;
+    width: 600 px;
+    border-color: var(--text-grey);
+    border-width: 5px;
+}
+
+.title-bar {
+    background-color: var(--title-blue);
+    font-family: 'sv_basic_manualbook';
+    height: 20px;
+}
+
+.tool-bar {
+    background-color: var(--text-grey);
+    font-family: 'sv_basic_manualbook';
+    height: 30px;
+}
+
+.window-body {
+    background-color: var(--screen-black);
+
+}
