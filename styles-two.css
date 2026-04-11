@@ -25,17 +25,21 @@ body{
 p{
     color: var(--text-grey);
 }
+
 .window-frame {
-    height: 400px;
-    width: 600 px;
-    border-color: var(--text-grey);
-    border-width: 5px;
+    height: auto;
+    width: auto;
+    margin-top: 300px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 5px solid var(--text-grey);
 }
 
 .title-bar {
     background-color: var(--title-blue);
     font-family: 'sv_basic_manualbook';
     height: 20px;
+    display: flexbox;
 }
 
 .tool-bar {
