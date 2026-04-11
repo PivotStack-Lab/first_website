@@ -4,7 +4,8 @@
     --win-green: #098083;
     --beige: #baa789;
     --sky-blue: #bce5f7;
-    --text-grey: #bac5c4;
+    --border-grey: #bac5c4;
+    --text-white: #ffffff;
 }
 
 @font-face {
@@ -16,39 +17,66 @@
 
 }
 
+* {
+    border: solid 2px red;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
+    display: flex 1;
     background-color: var(--win-green);
     box-sizing: border-box;
     font-family: 'Microsoft Sans Serif';
-}
-
-p{
-    color: var(--text-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .window-frame {
-    height: auto;
-    width: auto;
-    margin-top: 300px;
-    margin-left: 25%;
-    margin-right: 25%;
-    border: 5px solid var(--text-grey);
+    display: flex 1;
+    width: fit-content;
+    border: 5px solid var(--border-grey);
+    background-color: var(--screen-black);
 }
 
 .title-bar {
     background-color: var(--title-blue);
     font-family: 'sv_basic_manualbook';
     height: 20px;
-    display: flexbox;
+    display: flex
+}
+
+.title-bar h4 {
+    margin-top: 0;
+    margin-left: 10px;
+    color: var(--text-white);
 }
 
 .tool-bar {
-    background-color: var(--text-grey);
+    background-color: var(--border-grey);
     font-family: 'sv_basic_manualbook';
     height: 30px;
 }
 
 .window-body {
     background-color: var(--screen-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.window-body pre{
+    color: var(--text-white);
+    display: flex 1;
+}
+
+.blink {
 
 }
