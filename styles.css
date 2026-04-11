@@ -9,7 +9,7 @@
 body {
     background-color: var(--terminal-black);
     color: var(--less-green);
-    font-family: "Courier New";
+    font-family: "Terminal", "Courier New";
     box-sizing: border-box;
 }
 
