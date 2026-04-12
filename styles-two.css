@@ -18,7 +18,6 @@
 
 * {
     box-sizing: border-box;
-    border: solid 2px red;
 }
 
 html {
@@ -34,7 +33,6 @@ body {
     font-family: 'Microsoft Sans Serif', sans-serif;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .window-frame {
