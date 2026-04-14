@@ -21,14 +21,25 @@
 }
 
 body {
-    margin: 0;
+    margin: 0px;
     background-color: var(--win-green);
-    font-family: 'Microsoft Sans Serif', sans-serif;
+}
+
+.desktop {
+    display: grid;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .window-frame {
-    margin: auto;
     width: fit-content;
+    height: fit-content;
     border: 5px solid var(--border-grey);
     background-color: var(--screen-black);
     box-shadow: 1px 1px black, -1px -1px white, 1px 1px inset lightgray, -1px -1px inset darkgray;
@@ -46,7 +57,7 @@ body {
 }
 
 .dos-logo {
-    flex: 1;
+    flex 1;
 }
 
 .title-bar p {
