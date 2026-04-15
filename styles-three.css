@@ -140,8 +140,9 @@ body {
     border: transparent;
     box-shadow: var(--stand-out);
     display: flex;
+    gap: 2px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-right: auto;
 }
 
