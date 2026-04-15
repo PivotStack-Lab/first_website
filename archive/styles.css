@@ -1,0 +1,59 @@
+:root {
+    --matrix-green: #00ff41;
+    --less-green: #008f11;
+    --terminal-black: #0d0200;
+    --glow-strength: 10px;
+    --standard-padding: 1rem;
+}
+
+body {
+    background-color: var(--terminal-black);
+    color: var(--less-green);
+    font-family: "Terminal", "Courier New";
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--matrix-green);
+}
+
+a {
+    color: var(--less-green);
+    text-decoration: none;
+}
+
+.box.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.monitor-card {
+    display: block;
+    width: 200px;
+    border: 2px solid var(--matrix-green);
+    padding: var(--standard-padding);
+    margin: 1rem;
+    box-shadow: 0 0 var(--glow-strength) var(--matrix-green);
+    text-align: center;
+}
+
+.crt-screen {
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: var(--standard-padding);
+    display: inline-block;
+
+}
+
+.monitor-frame {
+    padding: 1/2rem;
+}
+
+.box{
+    display: flex;
+    font-size: large;
+}
+
+
