@@ -55,18 +55,31 @@ body {
     display: flex;
     box-shadow: var(--sink-in);
     align-items: center;
-    justify-items: flex-start;
+    justify-content: flex-start;
+    padding: 2px;
 }
 
 .dos-logo {
-    flex: 1;
+    margin: 4px;
 }
 
 .title-bar p {
-    flex: 16;
+    margin-right: auto;
     color: var(--text-white);
     font-size: 24px;
     font-weight: 700;
+}
+
+.control-button {
+    background-color: var(--border-grey);
+    border: 1px;
+    margin: 1px;
+    box-shadow: var(--stand-out);
+}
+
+.control-button.exit {
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .tool-bar {
