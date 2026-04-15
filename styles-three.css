@@ -6,6 +6,8 @@
     --sky-blue: #bce5f7;
     --border-grey: #bac5c4;
     --text-white: #ffffff;
+    --stand-out: 1px  1px black, -1px -1px white, 1px 1px inset lightgray, -1px -1px inset darkgray;
+    --sink-in: -1px -1px inset white, 1px 1px inset black, -1px -1px darkgray, 1px 1px lightgray;
 }
 
 @font-face {
@@ -43,7 +45,7 @@ body {
     width: fit-content;
     border: 5px solid var(--border-grey);
     background-color: var(--screen-black);
-    box-shadow: 1px 1px black, -1px -1px white, 1px 1px inset lightgray, -1px -1px inset darkgray;
+    box-shadow: var(--stand-out);
 }
 
 .title-bar {
@@ -51,10 +53,9 @@ body {
     font-family: 'sv_basic_manualbook';
     height: 30px;
     display: flex;
-    
-    box-shadow: -1px -1px inset white, 1px 1px inset black, -1px -1px darkgray, 1px 1px lightgray;
+    box-shadow: var(--sink-in);
     align-items: center;
-    justify-items: left;
+    justify-items: flex-start;
 }
 
 .dos-logo {
@@ -64,7 +65,8 @@ body {
 .title-bar p {
     flex: 16;
     color: var(--text-white);
-    font-size: x-large;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .tool-bar {
@@ -79,17 +81,18 @@ body {
     margin: 2px 0;
     height: max-content;
     font-size: large;
-    padding: 0 30px;
-    box-shadow: 1px 1px white, 1px 1px inset black;
+    text-align: center;
+    padding: 0 10px;
+    box-shadow: var(--sink-in);
 }
 
 .window-body {
     background-color: var(--screen-black);
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     padding: 30px;
-    box-shadow: -1px -1px inset white, 1px 1px inset darkgray, 1px 1px lightgray, -1px -1px lightgray;
+    box-shadow: var(--sink-in);
 }
 
 .window-body pre {
@@ -111,5 +114,5 @@ body {
     padding: 0px 20px;
     background-color: var(--border-grey);
     border: transparent;
-    box-shadow: 1px  1px black, -1px -1px white, 1px 1px inset lightgray, -1px -1px inset darkgray;
+    box-shadow: var(--stand-out);
 }
