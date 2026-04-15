@@ -135,12 +135,12 @@ body {
 }
 
 .start-button {
-    padding: 0px 15px;
     background-color: var(--border-grey);
     border: transparent;
     box-shadow: var(--stand-out);
     display: flex;
     gap: 2px;
+    font-size: 18px;
     align-items: center;
     justify-content: space-between;
     margin-right: auto;
