@@ -91,7 +91,7 @@ body {
 }
 
 .tool-bar select {
-    margin: 2px 0;
+    margin: 2px 10px 2px 0px;
     height: max-content;
     font-size: large;
     text-align: center;
@@ -102,6 +102,12 @@ body {
 
 .option {
     text-align-last: center;
+}
+
+.tool-button {
+    box-shadow: var(--stand-out);
+    margin-right: 2px;
+    border: transparent;
 }
 
 .window-body {
