@@ -129,8 +129,11 @@ body {
 }
 
 .start-button {
-    padding: 0px 20px;
+    padding: 0px 15px;
     background-color: var(--border-grey);
     border: transparent;
     box-shadow: var(--stand-out);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
