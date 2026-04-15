@@ -136,4 +136,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-right: auto;
+}
+
+.tray {
+    width: 85px;
+    box-shadow: var(--sink-in);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.clock {
+   margin: 4px;
 }
