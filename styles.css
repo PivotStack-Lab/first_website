@@ -82,6 +82,11 @@ body {
     margin-right: 4px;
 }
 
+.control-button:active {
+    box-shadow: var(--sink-in);
+    transform: translate(1px, 1px);
+}
+
 .tool-bar {
     background-color: var(--border-grey);
     font-family: 'sv_basic_manualbook';
@@ -108,6 +113,11 @@ body {
     box-shadow: var(--stand-out);
     margin-right: 2px;
     border: transparent;
+}
+
+.tool-button:active {
+    box-shadow: var(--sink-in);
+    transform: translate(1px, 1px);
 }
 
 .window-body {
@@ -138,12 +148,21 @@ body {
     background-color: var(--border-grey);
     border: transparent;
     box-shadow: var(--stand-out);
+    margin-right: auto;
     display: flex;
-    gap: 2px;
-    font-size: 18px;
     align-items: center;
     justify-content: space-between;
-    margin-right: auto;
+    gap: 2px;
+}
+
+.start-button:active {
+    box-shadow: var(--sink-in);
+}
+
+.start-button span {
+    font-family: "MS Sans Serif";
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .tray {
