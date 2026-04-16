@@ -32,6 +32,15 @@ body {
     display: flex;
     position: relative;
     height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.desktop-icon {
+    background-color: var(--win-green);
+    width: fit-content;
+    box-shadow: none;
+    margin: 3vh;
 }
 
 .window-frame {
