@@ -1,0 +1,177 @@
+:root {
+    --screen-black: #000000;
+    --title-blue: #0000a8;
+    --win-green: #098083;
+    --beige: #baa789;
+    --sky-blue: #bce5f7;
+    --border-grey: #bac5c4;
+    --text-white: #ffffff;
+    --stand-out: 1px  1px black, -1px -1px white, 1px 1px inset lightgray, -1px -1px inset darkgray;
+    --sink-in: -1px -1px inset white, 1px 1px inset black, -1px -1px darkgray, 1px 1px lightgray;
+}
+
+@font-face {
+    font-family: 'sv_basic_manualbook';
+    src: url('svbasicmanual-nrpp-webfont.woff2') format('woff2'),
+         url('svbasicmanual-nrpp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--win-green);
+    height: 100vh;
+}
+
+.desktop {
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+
+.window-frame {
+    width: fit-content;
+    border: 5px solid var(--border-grey);
+    background-color: var(--screen-black);
+    box-shadow: var(--stand-out);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.title-bar {
+    background-color: var(--title-blue);
+    font-family: 'sv_basic_manualbook';
+    height: 30px;
+    display: flex;
+    box-shadow: var(--sink-in);
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2px;
+}
+
+.dos-logo {
+    margin: 4px;
+}
+
+.title-bar p {
+    margin-right: auto;
+    color: var(--text-white);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.control-button {
+    background-color: var(--border-grey);
+    border: 1px;
+    margin: 1px;
+    box-shadow: var(--stand-out);
+}
+
+.control-button.exit {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.control-button:active {
+    box-shadow: var(--sink-in);
+    transform: translate(1px, 1px);
+}
+
+.tool-bar {
+    background-color: var(--border-grey);
+    font-family: 'sv_basic_manualbook';
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.tool-bar select {
+    margin: 2px 10px 2px 0px;
+    height: max-content;
+    font-size: large;
+    text-align: center;
+    text-align-last: center;
+    padding: 0 10px;
+    box-shadow: var(--sink-in);
+}
+
+.option {
+    text-align-last: center;
+}
+
+.tool-button {
+    box-shadow: var(--stand-out);
+    margin-right: 2px;
+    border: transparent;
+}
+
+.tool-button:active {
+    box-shadow: var(--sink-in);
+    transform: translate(1px, 1px);
+}
+
+.window-body {
+    background-color: var(--screen-black);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+    box-shadow: var(--sink-in);
+}
+
+.window-body pre {
+    color: var(--text-white);
+    font-size: x-large;
+}
+
+.task-bar {    
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 40px;
+    width: 100vw;
+    background-color: var(--border-grey);
+    padding: 5px;
+}
+
+.start-button {
+    background-color: var(--border-grey);
+    border: transparent;
+    box-shadow: var(--stand-out);
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.start-button:active {
+    box-shadow: var(--sink-in);
+}
+
+.start-button span {
+    font-family: "MS Sans Serif";
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.tray {
+    width: 90px;
+    box-shadow: var(--sink-in);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.clock {
+   margin: 4px;
+}
